@@ -1,0 +1,45 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  
+    color: #c5c5c5;
+    direction: rtl;
+    background: url(9800.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    box-sizing: inherit;
+}
+ 
+                        .td{
+                        text-align: center;
+
+                        text-decoration-line: underline overline;
+                        text-decoration-style: double;
+                        }
+
+.uu{
+
+    text-align: center;
+}
+    .salma {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      gap: 40px; /* المسافة بين الفيديوهات */
+    }
+
+    video {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ✅ هنا نتحكم في المسافة لو الشاشة صغيرة (موبايل) */
+    @media (max-width: 600px) {
+      .salma {
+        gap: 15px; /* مسافة أقل بين الفيديوهات في الموبايل */
+        padding: 10px;
+      }
+    }

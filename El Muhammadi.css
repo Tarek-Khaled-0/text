@@ -1,0 +1,268 @@
+
+
+  * {
+    margin: 0;
+    padding: 0;
+  
+
+    box-sizing: initial;
+  }
+
+
+
+
+  body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+  }
+
+
+
+  .slider {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+  }
+
+  .slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    object-fit:fill;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    z-index: 0;
+  }
+
+  .slider img.active {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background:#fae1b8;
+    color: #000000b3;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 22px;
+    z-index: 5;
+    transition: opacity 0.8s ease-in-out;
+    opacity: 1;
+
+
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    user-select: none;
+  }
+
+  .arrow:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .left { left: 20px; }
+  .right { right: 20px; }
+
+
+  .body{
+    color: #c5c5c5;
+    direction: rtl;
+    background: url(9800.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    box-sizing: inherit;
+
+}
+ 
+
+    .tarek{
+
+font-size: 40px;
+max-width: 100%;
+word-wrap: break-word;
+overflow-wrap: break-word;
+
+    max-height: 100%;
+   
+    min-width: 10px;
+text-align: center;  
+padding: 60px ;
+margin: auto;
+
+
+    }
+.pp{
+
+
+text-align: center;
+text-decoration-line: underline overline;
+text-decoration-style: dotted;
+margin-top: 40px;
+margin-bottom: 40px;
+font-size: 55px;
+
+}
+
+
+
+/*   الايقونات*/
+
+
+
+.social-grid {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+   
+  margin-top: 50px;
+   
+    
+  }
+
+  .social-row {
+    display: flex;
+    gap: 250px;
+    flex-wrap: wrap;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .social-icon:nth-child(1) { animation-delay: 0s; }
+  .social-icon:nth-child(2) { animation-delay: 0.2s; }
+  .social-icon:nth-child(3) { animation-delay: 0.4s; }
+
+  .social-icon img {
+    width: 150px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+   
+  }
+
+  .social-icon:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.2);
+  }
+
+  .social-icon:hover img {
+    transform: scale(1.2);
+  }
+
+  @media (max-width: 480px) {
+    .social-row {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .social-icon img {
+      width: 25px;
+    }
+
+    .social-icon {
+      font-size: 12px;
+    }
+  }
+.oop{
+
+font-size: 40px;
+
+
+}
+
+
+
+nav {
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.yyjj{
+    
+  padding: 20px;
+  margin: 20px auto;
+  width: 70%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+text-align: center;
+  color: #0e8f53;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.yyjj:hover {
+  background-color: #4b6cb7;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
